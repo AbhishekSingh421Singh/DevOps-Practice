@@ -15,7 +15,7 @@ jobs:
     container:
       image: node:14
       credentials:
-        username: ${{ secrets.DOCKER_USERNAME }}
+        username: ${{ var.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
       env:
         NODE_ENV: production
